@@ -1,0 +1,114 @@
+.footer{
+    background-color: $grayColor;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .gallery , .info ,.contact {
+        float: $float-left;
+    }
+    .gallery{
+        @media #{$minSmall}{
+            width: 100% ;
+        }
+        @media #{$minMedium}{
+            width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin: 5px 0;
+            img{
+                @media #{$minSmall}{
+                    float: $float-left;
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text{
+                @media #{$minSmall}{
+                    float: $float-left;
+                    margin: 0 15px;
+                    width: calc(100% - 180px);
+                }
+                
+                h4{
+                    color: $redColor;
+                }
+                p{
+                    color: #888;
+                    line-height: 1.7;
+                }
+            }
+            
+        }
+    }
+    .info{
+        @media #{$minSmall}{
+            width: 50% ;
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        ul{
+            color: #888;
+            line-height: 1.9;
+            span{
+                color: $redColor;
+            }
+        }
+        h4{
+            color: #888;
+            font-weight: bold;
+            margin-bottom: 0;
+
+        }
+        p{
+            color: #888;
+            margin-top: 8px;
+        }
+    }
+    .contact{
+        @media #{$minSmall}{
+            width: 50% ;
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea
+        {
+            border: 1px solid #888;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    .footer-title{
+        color: #444;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+
+    .copyright{
+        @media #{$minSmall}{
+            .text , .auther{
+                float: $float-left;
+                width: 50%;
+            }
+            .auther{
+            text-align: $text-right;
+        }
+        }
+        margin-top: 15px;
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        overflow: hidden;
+        color: #888;
+        
+        
+    }
+}
